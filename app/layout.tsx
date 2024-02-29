@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="min-h-dvh container mx-auto">
+          <header className="min-h-32 flex items-center justify-center">
+            <h1 className="font-bold text-6xl">Contentlayer z Nextem</h1>
+          </header>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
